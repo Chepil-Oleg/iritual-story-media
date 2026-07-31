@@ -1,0 +1,152 @@
+[
+  {
+    "id": "18190561753378991",
+    "timestamp": "2026-07-29T10:03:27+0000",
+    "media_type": "VIDEO",
+    "permalink": "https://www.instagram.com/stories/iritual_agent/3951867312886193304",
+    "metrics": {
+      "reach": {
+        "value": 72
+      },
+      "replies": {
+        "value": 0
+      },
+      "total_interactions": {
+        "value": 5
+      },
+      "shares": {
+        "value": 0
+      },
+      "follows": {
+        "value": 0
+      },
+      "profile_visits": {
+        "value": 1
+      },
+      "views": {
+        "value": 89
+      },
+      "navigation": {
+        "value": 75,
+        "breakdown": {
+          "swipe_forward": 7,
+          "tap_forward": 55,
+          "tap_back": 5,
+          "tap_exit": 8
+        }
+      }
+    }
+  },
+  {
+    "id": "17973708975088262",
+    "timestamp": "2026-07-29T10:03:13+0000",
+    "media_type": "VIDEO",
+    "permalink": "https://www.instagram.com/stories/iritual_agent/3951867215309015438",
+    "metrics": {
+      "reach": {
+        "value": 73
+      },
+      "replies": {
+        "value": 0
+      },
+      "total_interactions": {
+        "value": 2
+      },
+      "shares": {
+        "value": 0
+      },
+      "follows": {
+        "value": 0
+      },
+      "profile_visits": {
+        "value": 0
+      },
+      "views": {
+        "value": 91
+      },
+      "navigation": {
+        "value": 78,
+        "breakdown": {
+          "swipe_forward": 1,
+          "tap_back": 8,
+          "tap_forward": 67,
+          "tap_exit": 2
+        }
+      }
+    }
+  },
+  {
+    "id": "18360282589244968",
+    "timestamp": "2026-07-29T10:03:01+0000",
+    "media_type": "VIDEO",
+    "permalink": "https://www.instagram.com/stories/iritual_agent/3951867527491011840",
+    "metrics": {
+      "reach": {
+        "value": 76
+      },
+      "replies": {
+        "value": 0
+      },
+      "total_interactions": {
+        "value": 2
+      },
+      "shares": {
+        "value": 0
+      },
+      "follows": {
+        "value": 0
+      },
+      "profile_visits": {
+        "value": 0
+      },
+      "views": {
+        "value": 97
+      },
+      "navigation": {
+        "value": 86,
+        "breakdown": {
+          "tap_forward": 74,
+          "swipe_forward": 4,
+          "tap_back": 8
+        }
+      }
+    }
+  },
+  {
+    "id": "18109100284994920",
+    "timestamp": "2026-07-29T10:02:49+0000",
+    "media_type": "VIDEO",
+    "permalink": "https://www.instagram.com/stories/iritual_agent/3951867189867415372",
+    "metrics": {
+      "reach": {
+        "value": 87
+      },
+      "replies": {
+        "value": 0
+      },
+      "total_interactions": {
+        "value": 3
+      },
+      "shares": {
+        "value": 0
+      },
+      "follows": {
+        "value": 0
+      },
+      "profile_visits": {
+        "value": 0
+      },
+      "views": {
+        "value": 112
+      },
+      "navigation": {
+        "value": 83,
+        "breakdown": {
+          "tap_forward": 61,
+          "swipe_forward": 16,
+          "tap_exit": 6
+        }
+      }
+    }
+  }
+]

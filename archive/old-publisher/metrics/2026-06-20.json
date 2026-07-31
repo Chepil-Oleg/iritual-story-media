@@ -1,0 +1,113 @@
+[
+  {
+    "id": "18167763745440916",
+    "timestamp": "2026-06-19T09:10:14+0000",
+    "media_type": "VIDEO",
+    "permalink": "https://www.instagram.com/stories/iritual_agent/3922849840329512411",
+    "metrics": {
+      "reach": {
+        "value": 43
+      },
+      "replies": {
+        "value": 0
+      },
+      "total_interactions": {
+        "value": 2
+      },
+      "shares": {
+        "value": 0
+      },
+      "follows": {
+        "value": 0
+      },
+      "profile_visits": {
+        "value": 1
+      },
+      "views": {
+        "value": 47
+      },
+      "navigation": {
+        "value": 41,
+        "breakdown": {
+          "tap_forward": 30,
+          "swipe_forward": 5,
+          "tap_exit": 6
+        }
+      }
+    }
+  },
+  {
+    "id": "18082028135634610",
+    "timestamp": "2026-06-19T09:10:05+0000",
+    "media_type": "VIDEO",
+    "permalink": "https://www.instagram.com/stories/iritual_agent/3922849513979366736",
+    "metrics": {
+      "reach": {
+        "value": 48
+      },
+      "replies": {
+        "value": 0
+      },
+      "total_interactions": {
+        "value": 3
+      },
+      "shares": {
+        "value": 0
+      },
+      "follows": {
+        "value": 0
+      },
+      "profile_visits": {
+        "value": 0
+      },
+      "views": {
+        "value": 50
+      },
+      "navigation": {
+        "value": 46,
+        "breakdown": {
+          "tap_forward": 34,
+          "tap_exit": 7,
+          "swipe_forward": 5
+        }
+      }
+    }
+  },
+  {
+    "id": "18118688851692551",
+    "timestamp": "2026-06-19T09:09:54+0000",
+    "media_type": "VIDEO",
+    "permalink": "https://www.instagram.com/stories/iritual_agent/3922849509701684457",
+    "metrics": {
+      "reach": {
+        "value": 56
+      },
+      "replies": {
+        "value": 0
+      },
+      "total_interactions": {
+        "value": 2
+      },
+      "shares": {
+        "value": 0
+      },
+      "follows": {
+        "value": 0
+      },
+      "profile_visits": {
+        "value": 0
+      },
+      "views": {
+        "value": 58
+      },
+      "navigation": {
+        "value": 51,
+        "breakdown": {
+          "swipe_forward": 9,
+          "tap_forward": 40,
+          "tap_exit": 2
+        }
+      }
+    }
+  }
+]

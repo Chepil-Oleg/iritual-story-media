@@ -1,0 +1,265 @@
+[
+  {
+    "id": "17896950819473485",
+    "timestamp": "2026-07-04T05:25:57+0000",
+    "media_type": "VIDEO",
+    "permalink": "https://www.instagram.com/stories/iritual_agent/3933609034959558561",
+    "metrics": {
+      "reach": {
+        "value": 13
+      },
+      "replies": {
+        "value": 0
+      },
+      "total_interactions": {
+        "value": 0
+      },
+      "shares": {
+        "value": 0
+      },
+      "follows": {
+        "value": 0
+      },
+      "profile_visits": {
+        "value": 0
+      },
+      "views": {
+        "value": 18
+      },
+      "navigation": {
+        "value": 14,
+        "breakdown": {
+          "tap_forward": 12,
+          "tap_exit": 1,
+          "swipe_forward": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "18107347292002735",
+    "timestamp": "2026-07-04T05:24:18+0000",
+    "media_type": "VIDEO",
+    "permalink": "https://www.instagram.com/stories/iritual_agent/3933608204017663945",
+    "metrics": {
+      "reach": {
+        "value": 14
+      },
+      "replies": {
+        "value": 1
+      },
+      "total_interactions": {
+        "value": 3
+      },
+      "shares": {
+        "value": 2
+      },
+      "follows": {
+        "value": 0
+      },
+      "profile_visits": {
+        "value": 0
+      },
+      "views": {
+        "value": 18
+      },
+      "navigation": {
+        "value": 14,
+        "breakdown": {
+          "tap_forward": 13,
+          "tap_exit": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "18130147132531651",
+    "timestamp": "2026-07-03T07:08:45+0000",
+    "media_type": "VIDEO",
+    "permalink": "https://www.instagram.com/stories/iritual_agent/3932936007845987540",
+    "metrics": {
+      "reach": {
+        "value": 53
+      },
+      "replies": {
+        "value": 0
+      },
+      "total_interactions": {
+        "value": 3
+      },
+      "shares": {
+        "value": 0
+      },
+      "follows": {
+        "value": 0
+      },
+      "profile_visits": {
+        "value": 0
+      },
+      "views": {
+        "value": 67
+      },
+      "navigation": {
+        "value": 58,
+        "breakdown": {
+          "swipe_forward": 2,
+          "tap_forward": 44,
+          "tap_back": 4,
+          "tap_exit": 8
+        }
+      }
+    }
+  },
+  {
+    "id": "18126323854614564",
+    "timestamp": "2026-07-03T07:07:13+0000",
+    "media_type": "VIDEO",
+    "permalink": "https://www.instagram.com/stories/iritual_agent/3932934982012602035",
+    "metrics": {
+      "reach": {
+        "value": 57
+      },
+      "replies": {
+        "value": 0
+      },
+      "total_interactions": {
+        "value": 3
+      },
+      "shares": {
+        "value": 0
+      },
+      "follows": {
+        "value": 0
+      },
+      "profile_visits": {
+        "value": 0
+      },
+      "views": {
+        "value": 66
+      },
+      "navigation": {
+        "value": 57,
+        "breakdown": {
+          "tap_back": 4,
+          "tap_forward": 48,
+          "swipe_forward": 3,
+          "tap_exit": 2
+        }
+      }
+    }
+  },
+  {
+    "id": "17960748338961835",
+    "timestamp": "2026-07-03T07:06:36+0000",
+    "media_type": "VIDEO",
+    "permalink": "https://www.instagram.com/stories/iritual_agent/3932934664737710201",
+    "metrics": {
+      "reach": {
+        "value": 66
+      },
+      "replies": {
+        "value": 0
+      },
+      "total_interactions": {
+        "value": 1
+      },
+      "shares": {
+        "value": 0
+      },
+      "follows": {
+        "value": 0
+      },
+      "profile_visits": {
+        "value": 0
+      },
+      "views": {
+        "value": 75
+      },
+      "navigation": {
+        "value": 61,
+        "breakdown": {
+          "tap_exit": 3,
+          "tap_forward": 48,
+          "tap_back": 2,
+          "swipe_forward": 8
+        }
+      }
+    }
+  },
+  {
+    "id": "18103436726111719",
+    "timestamp": "2026-07-03T07:05:54+0000",
+    "media_type": "VIDEO",
+    "permalink": "https://www.instagram.com/stories/iritual_agent/3932934324404950051",
+    "metrics": {
+      "reach": {
+        "value": 73
+      },
+      "replies": {
+        "value": 0
+      },
+      "total_interactions": {
+        "value": 1
+      },
+      "shares": {
+        "value": 0
+      },
+      "follows": {
+        "value": 0
+      },
+      "profile_visits": {
+        "value": 0
+      },
+      "views": {
+        "value": 78
+      },
+      "navigation": {
+        "value": 70,
+        "breakdown": {
+          "swipe_forward": 7,
+          "tap_back": 3,
+          "tap_forward": 57,
+          "tap_exit": 3
+        }
+      }
+    }
+  },
+  {
+    "id": "17977884380881224",
+    "timestamp": "2026-07-03T07:05:17+0000",
+    "media_type": "VIDEO",
+    "permalink": "https://www.instagram.com/stories/iritual_agent/3932934005418926879",
+    "metrics": {
+      "reach": {
+        "value": 90
+      },
+      "replies": {
+        "value": 0
+      },
+      "total_interactions": {
+        "value": 0
+      },
+      "shares": {
+        "value": 0
+      },
+      "follows": {
+        "value": 0
+      },
+      "profile_visits": {
+        "value": 2
+      },
+      "views": {
+        "value": 99
+      },
+      "navigation": {
+        "value": 81,
+        "breakdown": {
+          "swipe_forward": 19,
+          "tap_forward": 51,
+          "tap_exit": 10,
+          "tap_back": 1
+        }
+      }
+    }
+  }
+]

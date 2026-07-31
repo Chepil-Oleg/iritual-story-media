@@ -1,0 +1,47 @@
+{
+  "_chat": "-1003969148297",
+  "_thread": 644,
+  "day06": {
+    "header": 672,
+    "files": [
+      "BAACAgIAAyEGAATslGWJAAICoWoqwtpc-TCda-SATT3NdQOtuo39AAKomwACAfhRSaLKBU3EqlpSPAQ",
+      "BAACAgIAAyEGAATslGWJAAIComoqwuaFm9mRqpramqyQm4u8TegoAAKqmwACAfhRSXYH3DNHDwExPAQ",
+      "BAACAgIAAyEGAATslGWJAAICo2oqwvDcDf3zmN_I2aeqEJG9oRicAAKrmwACAfhRScxVfpJgoJaQPAQ",
+      "BAACAgIAAyEGAATslGWJAAICpGoqwvq2U6o7SpPZWngbR_8JeGfiAAKsmwACAfhRSek6OrQcWen5PAQ"
+    ]
+  },
+  "day08": {
+    "header": 684,
+    "files": [
+      "BAACAgIAAyEGAATslGWJAAICrWoqxaJNwh3LkXr7uPm8uOdQ1gfxAALMmwACAfhRSRrmkbKYrm6RPAQ",
+      "BAACAgIAAyEGAATslGWJAAICrmoqxasxLG6TZNP3k42CF-tnMEHuAALNmwACAfhRSfKE_F_3QPCEPAQ",
+      "BAACAgIAAyEGAATslGWJAAICr2oqxbQg6kPl0DaUDHRMlNJZyhkTAALQmwACAfhRSaciWaW00ogAATwE",
+      "BAACAgIAAyEGAATslGWJAAICsGoqxb14avLiVpXiX6Jgdj12D-7uAALSmwACAfhRScKSgWGXfnwkPAQ"
+    ]
+  },
+  "day12": {
+    "header": 704,
+    "files": [
+      "BAACAgIAAyEGAATslGWJAAICwWoqyOD8aiVWO3INhynFzx-4PajcAALzmwACAfhRScxJCR9gvST-PAQ",
+      "BAACAgIAAyEGAATslGWJAAICwmoqyOqk6HbXEs765vx84mdT1xrUAAL0mwACAfhRSWJB4QGN1K99PAQ",
+      "BAACAgIAAyEGAATslGWJAAICw2oqyPObpRP8Nwa9JdaWRQ5oipHMAAL2mwACAfhRSWEci9OO2cVwPAQ",
+      "BAACAgIAAyEGAATslGWJAAICxGoqyPwNxXurRFSKBxKXICp-JYVpAAL3mwACAfhRSd7BFTyU5UCTPAQ"
+    ]
+  },
+  "day15": {
+    "header": 716,
+    "files": [
+      "BAACAgIAAyEGAATslGWJAAICzWoqyhqKV0-YDwsiA1bFAAHPZKAUcgACBJwAAgH4UUltCBP5d6qaBjwE",
+      "BAACAgIAAyEGAATslGWJAAICzmoqyiS8MwdqNploAhf6cd97MDAEAAIGnAACAfhRSQkm8PxkEDB0PAQ",
+      "BAACAgIAAyEGAATslGWJAAICz2oqyi7HjAMUxZuQ4lPERKRLpPxtAAIHnAACAfhRSTeQ3NIlS5r1PAQ"
+    ]
+  },
+  "day16": {
+    "header": 720,
+    "files": [
+      "BAACAgIAAyEGAATslGWJAAIC0WoqyrR1YJp-M_qLPo6FIZD09vCsAAINnAACAfhRSR-4cu4F6zDxPAQ",
+      "BAACAgIAAyEGAATslGWJAAIC0moqysKajAS2-6kYM-Wqg_RtU23TAAIOnAACAfhRSeeUTSx5CTzFPAQ",
+      "BAACAgIAAyEGAATslGWJAAIC02oqyt3JV5yF0aru6-4nKfdGkQzvAAITnAACAfhRSQfeuBrCHgmBPAQ"
+    ]
+  }
+}

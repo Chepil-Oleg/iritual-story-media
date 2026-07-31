@@ -1,0 +1,119 @@
+name: Publish IG Stories
+
+on:
+  schedule:
+    - cron: '0 4 * * *'    # ~09:00 KZT — основной
+    - cron: '0 8 * * *'    # ~13:00 KZT — запасной 1
+    - cron: '0 12 * * *'   # ~17:00 KZT — запасной 2
+  workflow_dispatch:
+    inputs:
+      day:
+        description: 'Принудительный день (например day08)'
+        required: false
+        type: string
+      dry_run:
+        description: 'Dry run — контейнеры + FINISHED, без публикации'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # --- Метрики + выводы: один раз в день (метка reports/<дата>) ---
+      - name: Collect metrics + conclusions
+        if: github.event_name == 'schedule'
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          FB_PAGE_ACCESS_TOKEN: ${{ secrets.FB_PAGE_ACCESS_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TG_REPORT_CHAT: "-1003969148297"
+          TG_REPORT_THREAD: "5"
+          METRICS_DIR: metrics
+        run: |
+          TODAY=$(TZ=Asia/Almaty date +%F)
+          if [ -f "reports/$TODAY.done" ]; then
+            echo "Отчёт за $TODAY уже сделан — пропуск"
+          else
+            python3 scripts/collect_metrics.py || echo "collect non-fatal fail"
+            mkdir -p reports && echo done > "reports/$TODAY.done"
+          fi
+
+      # --- Дайджесты: каждые 3 дня (выводы+стата) и раз в неделю (общий итог) ---
+      - name: Digests (3-day / weekly)
+        if: github.event_name == 'schedule'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TG_REPORT_CHAT: "-1003969148297"
+          TG_REPORT_THREAD: "5"
+          METRICS_DIR: metrics
+        run: |
+          TODAY=$(TZ=Asia/Almaty date +%F)
+          ANCHOR=2026-06-12
+          DIFF=$(( ( $(date -d "$TODAY" +%s) - $(date -d "$ANCHOR" +%s) ) / 86400 ))
+          mkdir -p reports
+          if [ $DIFF -gt 0 ] && [ $((DIFF % 3)) -eq 0 ] && [ ! -f "reports/3day-$TODAY.done" ]; then
+            python3 scripts/digest.py 3day && echo done > "reports/3day-$TODAY.done"
+          fi
+          if [ $DIFF -gt 0 ] && [ $((DIFF % 7)) -eq 0 ] && [ ! -f "reports/week-$TODAY.done" ]; then
+            python3 scripts/digest.py week && echo done > "reports/week-$TODAY.done"
+          fi
+
+      # --- Какой день публиковать (защита от повторной публикации) ---
+      - name: Decide which day to publish
+        id: pick
+        run: |
+          if [ -n "${{ github.event.inputs.day }}" ]; then
+            echo "day=${{ github.event.inputs.day }}" >> $GITHUB_OUTPUT
+            echo "Manual run for ${{ github.event.inputs.day }}"
+            exit 0
+          fi
+          TODAY=$(TZ=Asia/Almaty date +%F)
+          if [ -f "published/$TODAY.done" ]; then
+            echo "$TODAY уже опубликован — пропуск"
+            echo "day=" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          DAY=$(awk -v d="$TODAY" '$1 == d ":" {print $2}' schedule.yml)
+          if [ -z "$DAY" ]; then
+            echo "Нет записи на $TODAY — пропуск публикации"
+            echo "day=" >> $GITHUB_OUTPUT
+          else
+            echo "Публикуем $DAY за $TODAY"
+            echo "day=$DAY" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Publish + mark
+        if: steps.pick.outputs.day != ''
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          FB_PAGE_ACCESS_TOKEN: ${{ secrets.FB_PAGE_ACCESS_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          DRY_RUN: ${{ github.event.inputs.dry_run }}
+        run: |
+          set -e
+          python3 scripts/publish_day.py "${{ steps.pick.outputs.day }}"
+          if [ "${{ github.event.inputs.dry_run }}" != "true" ]; then
+            TODAY=$(TZ=Asia/Almaty date +%F)
+            mkdir -p published && echo "${{ steps.pick.outputs.day }}" > "published/$TODAY.done"
+          fi
+
+      # --- Коммитим состояние (всегда) ---
+      - name: Commit state
+        if: always()
+        run: |
+          git config user.name "iritual-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add metrics reports published 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -m "auto: state $(TZ=Asia/Almaty date +%F)"
+            git push || (git pull --rebase --autostash && git push)
+          else
+            echo "нет изменений состояния"
+          fi
